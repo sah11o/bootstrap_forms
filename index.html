@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .required:after {
+    content:" *";
+    color: red;
+  }
 </head>
 
 <body>
@@ -33,21 +38,21 @@
                 <form>
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label>Full Name</label>
+                            <label class="required">Full Name</label>
                             <input type="text" placeholder="Full Name" required class="form-control" />
                         </div>
                         <div class="col-md-6">
-                            <label>Institute Roll no:</label>
+                            <label class="required">Institute Roll no:</label>
                             <input type="text" placeholder="21XXYYYY" required class="form-control" />
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label>Date Of Birth</label>
+                            <label class="required">Date Of Birth</label>
                             <input type="date" required class="form-control" />
                         </div>
                         <div class="col-md-6">
-                            <label>Department</label>
+                            <label class="required">Department</label>
                             <select required class="form-control" />
                             <option>Electrical Engineering</option>
                             <option>Computer science</option>
@@ -66,7 +71,7 @@
                     </div>
                     <div required class="form-row">
                         <div class="col-md-6">
-                            <label> Institute Email Address</label>
+                            <label class="required"> Institute Email Address</label>
                             <input type="email" class="form-control" placeholder="xyz@kgpain.iitkgp.ac.in" />
                         </div>
                         <div required class="col-md-6">
@@ -81,7 +86,7 @@
                             <input type="url" placeholder="Enter Your Website" class="form-control" />
                         </div>
                         <div required class="col-md-6">
-                            <label>Password</label>
+                            <label class="required">Password</label>
                             <input type="password" placeholder="Password" class="form-control" />
                         </div>
 
